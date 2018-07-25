@@ -22,6 +22,7 @@ $ docker-compose up -d
 ```
 $ docker exec -it <webコンテナ名> bash
 # rails db:create
+# rails db:migrate
 ```
 
 MIT License
