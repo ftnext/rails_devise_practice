@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Railsでdeviseを触ってみるためのリポジトリ  
 
-Things you may want to cover:
+以下を参考に触ってみる  
+[[\*Rails\*] deviseの使い方（rails5版）](https://qiita.com/cigalecigales/items/f4274088f20832252374)
 
-* Ruby version
+* Ruby version: 2.4.1
+* Rails version: 5.1.4
+* devise version: 4.4.3
 
-* System dependencies
+環境構築はDockerを用いている。(DBはmysqlを使用)  
+このリポジトリをcloneした後、
 
-* Configuration
+```
+$ docker-compose up -d
+```
 
-* Database creation
+をすると環境が立ち上がる。  
+初回起動時はrailsコマンドによるDBの設定が必要。
 
-* Database initialization
+```
+$ docker exec -it <webコンテナ名> bash
+# rails db:create
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+MIT License
