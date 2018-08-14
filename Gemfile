@@ -54,3 +54,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise', '4.4.3'
+
+gem 'bootstrap', '4.1.3'
+gem 'autoprefixer-rails', '~> 6.0.3'
+gem 'jquery-rails', '4.3.3'
